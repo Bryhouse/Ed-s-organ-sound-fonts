@@ -1,0 +1,41 @@
+1012
+6
+261.625
+261.625
+10.0
+-0.5
+1.5
+19
+43
+0.0
+1
+9
+7
+261.625
+.5
+
+
+
+
+
+nsamp		number of samples in the envelope and time files
+num_partials	number of partial freqs in the synthesis
+freq0  		freq at which original sample was taken
+freq1		ref freq for timbre scaling
+scale_param	Slope of timbre conversion formula (2.42 for Principal pipe)
+spec_scale	parameter to set roll off of transient partial amplitude w/freq
+		(usually in range of 0.5 to 0.7)
+maxtime   	(usually <1.0)
+start_note 	(1 for C1; 7 for C2)
+stop_note  	(31 for C6; 37-C7; 43-C8; 49-C9)
+time_f-offset_end (0.0 to avoid this effect,
+		otherwise 0.4 to 0.5)
+bypass  	(chiff processing bypass 1=yes, 0=no)
+chiff_index  	(partial number that carries chiff)
+chiff_end  	(envelope sample number to stop Modify-chiff ftn, count from 0)
+chiff_ref_freq  (freq reference usedin Modify_chiff ftn)
+				use high freq to enhance chiff at low end
+				use low freq if less chiff is needed at low end
+chiff_mult  freq-independent multiplier for the chiff
+
+
